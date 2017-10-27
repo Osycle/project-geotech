@@ -1,0 +1,262 @@
+/*
+		_media.scss	
+*/
+
+
+
+@media only screen and (max-width: 1199px){
+	html body{
+		font-size: 15px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 991px){
+	html body{
+		font-size: 14px;
+	}
+	.logo, .menu-toggle{
+
+		@include table-celling( 100px );
+		
+	}
+	.logo{
+		text-align: center;
+		margin-left: 15px;
+		img{
+			width: 40px;
+		}
+	}
+
+	.leftbar-column{
+		text-align: center;
+	}
+
+
+
+
+	.img-circle{
+		margin: auto;
+	}
+	[class*="padd-right"]{
+		padding: initial;
+	}
+	[class^="inlineble"]{
+		*{
+			text-align: center;
+		}
+	}
+	.btn-lnk{
+		margin: auto;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.main-navbar{
+		display: none;
+	}
+	.skin{
+		display: block;
+		height: 100%;
+	}
+	.sec-about, .sec-news{
+		&:before{
+			left: -200%;
+		}
+	}
+	
+	.slider-serv{
+		.flickity-prev-next-button{
+			padding: 15px;
+		}
+	}
+	.slider-location{
+		display: block;
+		position: relative;
+		transform: initial;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		//border: 2px solid red;
+		height: 200px;
+		top: -50px;
+		.flickity-page-dots{
+			display: block;
+		}
+		.city-item{
+			transform: initial;
+			width: 100%;
+			text-align: center;
+			margin-top: 10px;
+		}
+	}
+	.slider-partners{
+		.partners-item{
+			  width: 100px;
+  			height: 70px;
+		}
+	}
+
+
+
+
+
+
+	.contacts{
+		text-align: center;
+		form *{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	.map-column{
+		position: relative;
+		#map{
+			width: 100%;
+			height: 600px;
+		}
+	}
+	.customers{
+		figure{
+			margin-top: 35px;
+			border-bottom: 4px solid black;
+			width: 45%;
+			padding-bottom: 10px;
+		}
+	}
+
+
+
+
+
+
+	#footer{
+		*{
+			text-align: center;
+		}
+		section{
+			margin: 30px 0;
+    	display: inline-block;
+    	button{
+    		float: initial;
+    		width: 100%;
+    		height: 40px;
+    	}
+    	span{
+    		float: initial;
+    	}
+
+		}
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+	html body{
+		font-size: 13px;
+	}
+	.padd-hor-60{
+		padding-left: 15px;
+    padding-right: 15px;
+	}
+	.services-short .flickity-prev-next-button{
+		border-radius: 0;
+    width: 10px;
+    height: 10px;
+	}
+	main{
+
+		text-align: center;
+		h1{
+			&::before{
+				left: 50%;
+	    	margin-left: -25px;
+			}
+		}
+		.about-short, .news-short{
+			padding: 0;
+		}
+		.news-desc{
+			margin-left: 5%;
+			padding-right: 5%;
+		}
+		.desc{
+			margin: 30px 0;
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+
+
+
+	}
+
+
+	//customers
+	.customers{
+		figure{
+			width: 90%;
+		}
+	}
+
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px){
+	html body{
+		font-size: 12px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MIN-WIDTH
+
+
+@media (min-width: 768px) {
+
+} 
+@media (min-width: 992px) {
+	 .menu-toggle {
+    display: none;
+  }
+} 
