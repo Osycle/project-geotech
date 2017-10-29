@@ -48,11 +48,8 @@ gulp.task('scripts', () =>
 			'app/js/jquery.min.js',
 			'app/js/smoothscroll.js',
 			'app/js/bootstrap.js',
-<<<<<<< HEAD
-=======
 			'app/js/jquery.fractionslider.js',
 			'app/js/jquery.fancybox.js',
->>>>>>> 02cd1d4604207a728f133843cc910586d1789ef3
 			'app/js/aos.js',
 			'app/js/wow.js',
 			'app/js/jquery.fancybox.js',

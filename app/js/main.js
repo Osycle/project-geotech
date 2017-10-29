@@ -48,13 +48,14 @@ $(function(){
 
 	//--SLIDER
 	// SERVICES
-	var carouselServ = $('.slider-serv .slider-content').flickity({
-		arrowShape: { 
+	var arrowStyle = { 
 		  x0: 10,
 		  x1: 60, y1: 50,
 		  x2: 60, y2: 45,
 		  x3: 15
-		},
+		}
+	var carouselServ = $('.slider-serv .slider-content').flickity({
+		arrowShape: arrowStyle,
 		percentPosition: true,
 		pageDots: false,
 		autoPlay: false,
@@ -69,12 +70,7 @@ $(function(){
 		pageDots: false
 	});
 	$('.slider-gallery .gallery-nav').flickity({
-		arrowShape: { 
-		  x0: 10,
-		  x1: 60, y1: 50,
-		  x2: 60, y2: 45,
-		  x3: 15
-		},
+		arrowShape: arrowStyle,
 		asNavFor: '.gallery-main',
 	  contain: true,
 	  pageDots: false
@@ -96,14 +92,15 @@ $(function(){
 	// PARTNERS
 	var carouselPartners = $('.slider-partners .slider-content').flickity({
 		autoPlay: 2000,
+		arrowShape: arrowStyle,
 		imagesLoaded: true,
-		prevNextButtons: false,
+		//prevNextButtons: false,
 		pageDots: false,
 		wrapAround: true,
 		selectedAttraction: 0.2,
 		friction: 0.8,
-		percentPosition: false,
-		rightToLeft: true,
+		percentPosition: true,
+		//rightToLeft: true,
 		cellAlign: 'center'
 	});
 
@@ -117,6 +114,73 @@ $(function(){
 		$(this).css("background-position-x", (-220 + (-e.pageX/50)))
 					 .css("background-position-y", (-400 + (-e.pageY/10)));
 	});
+
+
+$("#header").before('<div class="header-hidden"></div>');
+$(".nav-menu").initMenu({
+	"menuToggleBtn": ".menu-toggle",
+	"subMenu": ".sub-menu-1",
+	"modalMenu": "#menu-modal",
+	menuHoverIn: function(){console.log('sadsd')}
+})
+
+$(".btn-city").hover(
+	function(){
+		$(this).click();
+}, function(){
+
+});
+
+
+function phoneDap(){
+	if ( checkView(992) )
+		return;
+	$(".footer-menu")
+		.before	( $(".footer-info") )
+		.after	( $(".footer-logo") )
+}
+phoneDap();
+
+//RESIZE
+$( window ).on("resize", function(e){
+
+	// body
+
+});
+
+
+
+var header_status = false;
+//SCROLL
+$( window ).on("scroll", function(){
+	if($(window).scrollTop() > 300 && header_status == false){
+
+		$("#header").addClass("navbar-scroll");
+		
+		header_status = true; 
+
+	}else if($(window).scrollTop() < 300 && header_status == true){
+
+		$("#header").removeClass("navbar-scroll");
+		
+		header_status = false;
+
+	}
+
+});
+
+
+
+
+
+
+
+
+
+	});//$
+}) (jQuery);
+
+
 
 window.$.fn.initMenu = function(option){
 
@@ -142,137 +206,6 @@ window.$.fn.initMenu = function(option){
 	return menu;
 
 }
-
-
-$(".nav-menu").initMenu({
-	"menuToggleBtn": ".menu-toggle",
-	"subMenu": ".sub-menu-1",
-	"modalMenu": "#menu-modal",
-	menuHoverIn: function(){console.log('sadsd')}
-})
-
-
-
-/*$("body").append("<div id='modal-shadow'></div>");
-window.modal_shadow = $("body").find("#modal-shadow");*/
-
-
-
-function phoneDap(){
-	if ( checkView(992) )
-		return;
-	$(".footer-menu")
-		.before	( $(".footer-info") )
-		.after	( $(".footer-logo") )
-}
-phoneDap();
-
-//RESIZE
-$( window ).on("resize", function(e){
-
-	// body
-
-});
-var header_status = false;
-//SCROLL
-$( window ).on("scroll", function(){
-	if($(window).scrollTop() > 500 && header_status == false){
-
-		$("#header").addClass("navbar-scroll");
-		
-		header_status = true; 
-
-	}else if($(window).scrollTop() < 500 && header_status == true){
-
-		$("#header").removeClass("navbar-scroll");
-		
-		header_status = false;
-
-	}
-
-});
-
-
-
-
-
-
-
-
-
-function sendForm(th){
-
-	this.onsubmit = function(e){ e.preventDefault();}
-	var require = $(th).serialize();
-	send(require+"&to="+to);
-
-	$(th).find("input").val("");
-}
-
-function ajPost(u, d, s, c){
-	$.ajax({
-		type: 		"POST",
-		url: 			u,
-		data: 		d,
-		success: 	s,
-		statusCode: {
-			404: function(){alert("Страница не найдена");}
-		},
-		complete: c
-	});
-}
- $.fn.fadeToggleBool = function( dura ){
- 	var dura = 290;
- 	var self = $( $(this) ),
- 		 bool = self.css("display") == "none";
-
-	self.fadeToggle({
-
-		duration: dura,
-		easing: "linear"
-
-	});
-
-	return bool;
- }
-
-function modalShadow( el ){
-
-	if( $(modal_shadow).length == 0 && el.jquery) 
-		return;
-
-	if( modal_shadow.fadeToggleBool() ){
-		modal_shadow.on("click", function(){
-			if(el.length != 0)
-				el.trigger("click");
-			});
-	}else
-		modal_shadow.off("click");
-}
-
-function scrolledDiv(el) {
-	try{
-	  var docViewTop = $(window).scrollTop(),
-		docViewBottom = docViewTop + $(window).height(),
-		elTop = $(el).offset().top,
-		elBottom = elTop + $(el).height()/1.8;
-	}catch(err){console.error();}
-
-  	return ((elBottom <= docViewBottom) && (elTop >= docViewTop));
-}
-
-
-	});//$
-}) (jQuery);
-
-
-
-function checkView( width ){
-	return ($( document ).width() > width);
-}
-
-
-
 
 function Menu( menu, options ){
 
@@ -356,7 +289,8 @@ function Menu( menu, options ){
 
 	//	FUNCITON
 
-	function adposmenu(subMenu){
+
+function adposmenu(subMenu){
 		//Адаптация положение подменю в зависимости от размера экрана
 		var el = $(subMenu).find("li ul");
 		if (el.length === 0) return;
@@ -366,3 +300,67 @@ function Menu( menu, options ){
 
 }
 
+function checkView( width ){
+	return ($( document ).width() > width);
+}
+
+function sendForm(th){
+
+	this.onsubmit = function(e){ e.preventDefault();}
+	var require = $(th).serialize();
+	send(require+"&to="+to);
+
+	$(th).find("input").val("");
+}
+
+function ajPost(u, d, s, c){
+	$.ajax({
+		type: 		"POST",
+		url: 			u,
+		data: 		d,
+		success: 	s,
+		statusCode: {
+			404: function(){alert("Страница не найдена");}
+		},
+		complete: c
+	});
+}
+ $.fn.fadeToggleBool = function( dura ){
+ 	var dura = 290;
+ 	var self = $( $(this) ),
+ 		 bool = self.css("display") == "none";
+
+	self.fadeToggle({
+
+		duration: dura,
+		easing: "linear"
+
+	});
+
+	return bool;
+ }
+
+function modalShadow( el ){
+
+	if( $(modal_shadow).length == 0 && el.jquery) 
+		return;
+
+	if( modal_shadow.fadeToggleBool() ){
+		modal_shadow.on("click", function(){
+			if(el.length != 0)
+				el.trigger("click");
+			});
+	}else
+		modal_shadow.off("click");
+}
+
+function scrolledDiv(el) {
+	try{
+	  var docViewTop = $(window).scrollTop(),
+		docViewBottom = docViewTop + $(window).height(),
+		elTop = $(el).offset().top,
+		elBottom = elTop + $(el).height()/1.8;
+	}catch(err){console.error();}
+
+  	return ((elBottom <= docViewBottom) && (elTop >= docViewTop));
+}

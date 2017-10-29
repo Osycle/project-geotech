@@ -74,12 +74,12 @@ http://flickity.metafizzy.co
 .flickity-prev-next-button.next { right: 10px; }
 /* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {
-  left: auto;
-  right: 10px;
+  //left: auto;
+  //right: 10px;
 }
 .flickity-rtl .flickity-prev-next-button.next {
-  right: auto;
-  left: 10px;
+  //right: auto;
+  //left: 10px;
 }
 
 .flickity-prev-next-button:disabled {

@@ -204,19 +204,42 @@
 
 	      	<form id="feedback" method="post" action="feedback.php" class="contact-form">
 
-						<label>Имя</label>
-						<input class="form-control" type="text" name="name" placeholder="Имя" autocomplete="off" required="required"
+						<label>Ваше имя</label>
+						<input class="form-control" 
+									 type="text" 
+									 name="name" 
+									 placeholder="Имя" autocomplete="off" required="required"
 									 data-toggle="popover" 
 									 data-trigger="focus"
-									 data-content="Введите своё имя"/
-									 >
+									 data-content="Введите своё имя"/>
 
-						<label>Телефон</label>
-						<input class="form-control" type="tel" name="phone" placeholder="+998 (xx) xxx-xx-xx" minlength="14" autocomplete="off" required="required"
+
+
+						<label>Электронная почта</label>
+						<input class="form-control" 
+									 type="email" 
+									 name="email" 
+									 placeholder="email" autocomplete="off" required="required"
+									 data-toggle="popover" 
+									 data-trigger="focus"
+									 data-content="Укажите электронную почту"/>
+
+
+						<label>Номер телефона</label>
+						<input class="form-control" type="tel" 
+									 name="phone" 
+									 placeholder="+998 (xx) xxx-xx-xx" autocomplete="off" required="required"
+									 minlength="14"
 									 data-toggle="popover" 
 									 data-trigger="focus"
 									 data-content="Укажите номер телефона"/>
 
+
+
+						<textarea class="form-control" 
+									 name="message" 
+									 placeholder="Сообщение"></textarea>
+						
 						
 	      	</form>
 			      <div class="modal-footer">

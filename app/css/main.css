@@ -13423,14 +13423,6 @@ http://flickity.metafizzy.co
   right: 10px; }
 
 /* right to left */
-.flickity-rtl .flickity-prev-next-button.previous {
-  left: auto;
-  right: 10px; }
-
-.flickity-rtl .flickity-prev-next-button.next {
-  right: auto;
-  left: 10px; }
-
 .flickity-prev-next-button:disabled {
   opacity: 0.3;
   cursor: auto; }
@@ -15282,11 +15274,15 @@ button:hover, button:focus {
   right: 0;
   left: 0;
   z-index: 1010;
-  position: relative;
+  position: absolute;
   -webkit-transition: background 0.35s cubic-bezier(0.7, 0.65, 0.5, 1);
   -o-transition: background 0.35s cubic-bezier(0.7, 0.65, 0.5, 1);
   transition: background 0.35s cubic-bezier(0.7, 0.65, 0.5, 1);
   background: url(../img/bg.png) -300px -700px no-repeat; }
+
+.header-hidden {
+  position: relative;
+  height: 190px; }
 
 .logo, .main-navbar, .menu-toggle {
   display: table-cell;
@@ -15586,10 +15582,27 @@ button:hover, button:focus {
       border: 2px solid white; }
 
 .feedback form {
-  width: 80%;
+  width: 90%;
   color: white;
   margin: auto;
-  margin-bottom: 50px; }
+  margin-bottom: 15px; }
+
+.feedback label {
+  font-weight: 400; }
+
+.feedback .form-control:focus, .feedback .feedback-content input:focus, .feedback-content .feedback input:focus, .feedback .feedback-content textarea:focus, .feedback-content .feedback textarea:focus {
+  border-color: white;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 8px 0px rgba(255, 255, 255, 0.1), 0 0 20px 2px rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 1px 8px 0px rgba(255, 255, 255, 0.1), 0 0 20px 2px rgba(255, 255, 255, 0.7); }
+
+.feedback input {
+  width: 80%; }
+
+.feedback textarea {
+  margin-top: 30px;
+  resize: none;
+  height: 120px; }
 
 .feedback .modal-content {
   width: 350px;
@@ -15600,7 +15613,10 @@ button:hover, button:focus {
   top: 50%; }
 
 .feedback .modal-body {
-  padding: 0 50px; }
+  padding: 0 30px; }
+
+.modal-footer {
+  border: 0; }
 
 .nav-menu.min {
   display: initial; }
@@ -15947,39 +15963,39 @@ main {
   .carousel-services, .carousel-services h1, .carousel-services h2, .carousel-services h3 {
     color: #333; }
 
-.services-short {
-  /* big buttons, no circle */
-  /* arrow color */
-  /* hide disabled button */ }
-  .services-short .flickity-viewport {
-    height: 250px; }
-  .services-short .flickity-prev-next-button.next {
-    right: -10%;
-    -webkit-box-shadow: -15px 0 20px -5px white;
-    box-shadow: -15px 0 20px -5px white; }
-  .services-short .flickity-prev-next-button.previous {
-    left: -10%;
-    -webkit-box-shadow: 15px 0 20px -5px white;
-    box-shadow: 15px 0 20px -5px white; }
-  .services-short .flickity-prev-next-button previous {
-    background: url(../img/slider/icons/arrow.png) center center no-repeat transparent; }
-  .services-short .flickity-prev-next-button {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    width: 70px;
-    height: 70px;
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  -webkit-border-radius: initial;
+  border-radius: initial; }
+  .flickity-prev-next-button:active, .flickity-prev-next-button:focus, .flickity-prev-next-button:hover {
     background-color: transparent; }
-    @media only screen and (max-width: 991px) {
-      .services-short .flickity-prev-next-button {
-        background-color: white; }
-        .services-short .flickity-prev-next-button:hover {
-          background-color: white; } }
-  .services-short .flickity-prev-next-button .arrow {
-    fill: #b1b1b1; }
-  .services-short .flickity-prev-next-button.no-svg {
-    color: white; }
-  .services-short .flickity-prev-next-button:disabled {
+    .flickity-prev-next-button:active .arrow, .flickity-prev-next-button:focus .arrow, .flickity-prev-next-button:hover .arrow {
+      fill: #000;
+      fill-opacity: 0.8; }
+  .flickity-prev-next-button:disabled {
     display: none; }
+  .flickity-prev-next-button.next {
+    right: -10%; }
+  .flickity-prev-next-button.previous {
+    left: -10%; }
+  .flickity-prev-next-button svg {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .flickity-prev-next-button.no-svg {
+    color: white; }
+  .flickity-prev-next-button .arrow {
+    fill: #000;
+    fill-opacity: 0.2; }
+  @media only screen and (min-width: 991px) {
+    .flickity-prev-next-button.next {
+      right: -7.5%; } }
+
+.services-short .flickity-viewport {
+  height: 250px; }
 
 .slider-serv {
   width: 92%;
@@ -16190,16 +16206,16 @@ main {
     -webkit-transform: matrix(2, 2, 0, 3, 0, 0) rotate(120deg);
     -ms-transform: matrix(2, 2, 0, 3, 0, 0) rotate(120deg);
     transform: matrix(2, 2, 0, 3, 0, 0) rotate(120deg); }
-  .button-group button:focus:before, .button-group button:focus:after {
+  .button-group button:hover:before, .button-group button:hover:after {
     opacity: 1; }
-  .button-group button:focus:after {
+  .button-group button:hover:after {
     -webkit-transition: all 0.0s ease-in-out 0;
     -o-transition: all 0.0s ease-in-out 0;
     transition: all 0.0s ease-in-out 0;
     -webkit-transform: matrix(2, 2, 0, 3, 0, -10) rotate(120deg);
     -ms-transform: matrix(2, 2, 0, 3, 0, -10) rotate(120deg);
     transform: matrix(2, 2, 0, 3, 0, -10) rotate(120deg); }
-  .button-group button:focus:before {
+  .button-group button:hover:before {
     -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
     -ms-transform: matrix(1, 0, 0, 1, 0, 0);
     transform: matrix(1, 0, 0, 1, 0, 0); }
@@ -16246,6 +16262,10 @@ main {
 
 .slider-partners {
   margin: 45px 0; }
+  .slider-partners .flickity-prev-next-button.previous {
+    left: -3.5%; }
+  .slider-partners .flickity-prev-next-button.next {
+    right: -3.5%; }
 
 .staff [class*="inlineble"] p {
   font-size: 1.0625em; }
@@ -16376,6 +16396,7 @@ main {
   background-color: white; }
 
 .article-service .content-column ul {
+  padding: 0 15px;
   margin-top: 15px; }
   .article-service .content-column ul li {
     font-size: 1.1em;
@@ -16491,10 +16512,9 @@ main {
     background-color: rgba(5, 88, 158, 0.5); }
 
 .slider-gallery .flickity-prev-next-button {
-  background-color: transparent;
-  -webkit-transform: scale(2);
-  -ms-transform: scale(2);
-  transform: scale(2);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
   top: 50%;
   right: -10%;
   margin-top: -25px; }
@@ -16636,6 +16656,8 @@ main {
     padding-left: 15px;
     padding-right: 15px;
     vertical-align: middle; }
+  .header-hidden {
+    height: 100px; }
   .logo {
     text-align: center;
     margin-left: 15px; }
