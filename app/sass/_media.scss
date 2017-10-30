@@ -150,7 +150,9 @@
     	display: inline-block;
     	button{
     		float: initial;
-    		width: 100%;
+    		//width: 100%;
+    		margin-left: auto;
+    		margin-right: auto;
     		height: 40px;
     	}
     	span{

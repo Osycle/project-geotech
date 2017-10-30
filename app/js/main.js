@@ -121,7 +121,7 @@ $(".nav-menu").initMenu({
 	"menuToggleBtn": ".menu-toggle",
 	"subMenu": ".sub-menu-1",
 	"modalMenu": "#menu-modal",
-	menuHoverIn: function(){console.log('sadsd')}
+	menuHoverIn: function(){}
 })
 
 $(".btn-city").hover(

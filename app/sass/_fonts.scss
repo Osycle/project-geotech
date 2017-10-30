@@ -14,183 +14,319 @@ $path: "../fonts";
   font-style: normal;
 }
 
+
+
+
+
+
 @font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed SemiBold'),
-         local('FiraSansCondensed-SemiBold'),
-         url($path+'/Firasanscondensedsemibold.woff2') format('woff2'),
-         url($path+'/Firasanscondensedsemibold.woff') format('woff'),
-         url($path+'/Firasanscondensedsemibold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed Medium'),
-         local('FiraSansCondensed-Medium'),
-         url($path+'/Firasanscondensedmedium.woff2') format('woff2'),
-         url($path+'/Firasanscondensedmedium.woff') format('woff'),
-         url($path+'/Firasanscondensedmedium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed Medium Italic'),
-         local('FiraSansCondensed-MediumItalic'),
-         url($path+'/Firasanscondensedmediumitalic.woff2') format('woff2'),
-         url($path+'/Firasanscondensedmediumitalic.woff') format('woff'),
-         url($path+'/Firasanscondensedmediumitalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed Italic'),
-         local('FiraSansCondensed-Italic'),
-         url($path+'/Firasanscondenseditalic.woff2') format('woff2'),
-         url($path+'/Firasanscondenseditalic.woff') format('woff'),
-         url($path+'/Firasanscondenseditalic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed ExtraLight'),
-         local('FiraSansCondensed-ExtraLight'),
-         url($path+'/Firasanscondensedextralight.woff2') format('woff2'),
-         url($path+'/Firasanscondensedextralight.woff') format('woff'),
-         url($path+'/Firasanscondensedextralight.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed Light Italic'),
-         local('FiraSansCondensed-LightItalic'),
-         url($path+'/Firasanscondensedlightitalic.woff2') format('woff2'),
-         url($path+'/Firasanscondensedlightitalic.woff') format('woff'),
-         url($path+'/Firasanscondensedlightitalic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed Light'),
-         local('FiraSansCondensed-Light'),
-         url($path+'/Firasanscondensedlight.woff2') format('woff2'),
-         url($path+'/Firasanscondensedlight.woff') format('woff'),
-         url($path+'/Firasanscondensedlight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed Book'),
-         local('FiraSansCondensed-Book'),
-         url($path+'/Firasanscondensedbook.woff2') format('woff2'),
-         url($path+'/Firasanscondensedbook.woff') format('woff'),
-         url($path+'/Firasanscondensedbook.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed Regular'),
-         local('FiraSansCondensed-Regular'),
-         url($path+'/Firasanscondensedregular.woff2') format('woff2'),
-         url($path+'/Firasanscondensedregular.woff') format('woff'),
-         url($path+'/Firasanscondensedregular.ttf') format('truetype');
+    font-family:'Mohave';
+    src: local('Mohave'),
+         local('Mohave'),
+         url($path+'/Mohave.woff') format('woff'),
+         url($path+'/Mohave.woff2') format('woff2'),
+         url($path+'/Mohave.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
+
+
 @font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed Heavy'),
-         local('FiraSansCondensed-Heavy'),
-         url($path+'/Firasanscondensedheavy.woff2') format('woff2'),
-         url($path+'/Firasanscondensedheavy.woff') format('woff'),
-         url($path+'/Firasanscondensedheavy.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
+    font-family: 'GothaProReg';
+    src: url($path+'/GothaProReg.eot');
+    src: url($path+'/GothaProReg.eot') format('embedded-opentype'),
+         url($path+'/GothaProReg.woff2') format('woff2'),
+         url($path+'/GothaProReg.woff') format('woff'),
+         url($path+'/GothaProReg.ttf') format('truetype'),
+         url($path+'/GothaProReg.svg#GothaProReg') format('svg');
 }
 @font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed SemiBold Italic'),
-         local('FiraSansCondensed-SemiBoldItalic'),
-         url($path+'/Firasanscondensedsemibolditalic.woff2') format('woff2'),
-         url($path+'/Firasanscondensedsemibolditalic.woff') format('woff'),
-         url($path+'/Firasanscondensedsemibolditalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
+    font-family: 'GothaProBla';
+    src: url($path+'/GothaProBla.eot');
+    src: url($path+'/GothaProBla.eot') format('embedded-opentype'),
+         url($path+'/GothaProBla.woff2') format('woff2'),
+         url($path+'/GothaProBla.woff') format('woff'),
+         url($path+'/GothaProBla.ttf') format('truetype'),
+         url($path+'/GothaProBla.svg#GothaProBla') format('svg');
 }
 @font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed Bold Italic'),
-         local('FiraSansCondensed-BoldItalic'),
-         url($path+'/Firasanscondensedbolditalic.woff2') format('woff2'),
-         url($path+'/Firasanscondensedbolditalic.woff') format('woff'),
-         url($path+'/Firasanscondensedbolditalic.ttf') format('truetype');
-    font-weight: 700;
-    font-style: italic;
+    font-family: 'GothaProBolIta';
+    src: url($path+'/GothaProBolIta.eot');
+    src: url($path+'/GothaProBolIta.eot') format('embedded-opentype'),
+         url($path+'/GothaProBolIta.woff2') format('woff2'),
+         url($path+'/GothaProBolIta.woff') format('woff'),
+         url($path+'/GothaProBolIta.ttf') format('truetype'),
+         url($path+'/GothaProBolIta.svg#GothaProBolIta') format('svg');
 }
+
+
 @font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed ExtraLight Italic'),
-         local('FiraSansCondensed-ExtraLightItalic'),
-         url($path+'/Firasanscondensedextralightitalic.woff2') format('woff2'),
-         url($path+'/Firasanscondensedextralightitalic.woff') format('woff'),
-         url($path+'/Firasanscondensedextralightitalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
+    font-family: 'GothaProNarMed';
+    src: url($path+'/GothaProNarMed.eot');
+    src: url($path+'/GothaProNarMed.eot') format('embedded-opentype'),
+         url($path+'/GothaProNarMed.woff2') format('woff2'),
+         url($path+'/GothaProNarMed.woff') format('woff'),
+         url($path+'/GothaProNarMed.ttf') format('truetype'),
+         url($path+'/GothaProNarMed.svg#GothaProNarMed') format('svg');
 }
+
+
 @font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed Bold'),
-         local('FiraSansCondensed-Bold'),
-         url($path+'/Firasanscondensedbold.woff2') format('woff2'),
-         url($path+'/Firasanscondensedbold.woff') format('woff'),
-         url($path+'/Firasanscondensedbold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+    font-family: 'GothaProMed';
+    src: url($path+'/GothaProMed.eot');
+    src: url($path+'/GothaProMed.eot') format('embedded-opentype'),
+         url($path+'/GothaProMed.woff2') format('woff2'),
+         url($path+'/GothaProMed.woff') format('woff'),
+         url($path+'/GothaProMed.ttf') format('truetype'),
+         url($path+'/GothaProMed.svg#GothaProMed') format('svg');
 }
+
 @font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed Heavy Italic'),
-         local('FiraSansCondensed-HeavyItalic'),
-         url($path+'/Firasanscondensedheavyitalic.woff2') format('woff2'),
-         url($path+'/Firasanscondensedheavyitalic.woff') format('woff'),
-         url($path+'/Firasanscondensedheavyitalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
+    font-family: 'GothaProLig';
+    src: url($path+'/GothaProLig.eot');
+    src: url($path+'/GothaProLig.eot') format('embedded-opentype'),
+         url($path+'/GothaProLig.woff2') format('woff2'),
+         url($path+'/GothaProLig.woff') format('woff'),
+         url($path+'/GothaProLig.ttf') format('truetype'),
+         url($path+'/GothaProLig.svg#GothaProLig') format('svg');
 }
+
 @font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed ExtraBold'),
-         local('FiraSansCondensed-ExtraBold'),
-         url($path+'/Firasanscondensedextrabold.woff2') format('woff2'),
-         url($path+'/Firasanscondensedextrabold.woff') format('woff'),
-         url($path+'/Firasanscondensedextrabold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
+    font-family: 'GothaProBlaIta';
+    src: url($path+'/GothaProBlaIta.eot');
+    src: url($path+'/GothaProBlaIta.eot') format('embedded-opentype'),
+         url($path+'/GothaProBlaIta.woff2') format('woff2'),
+         url($path+'/GothaProBlaIta.woff') format('woff'),
+         url($path+'/GothaProBlaIta.ttf') format('truetype'),
+         url($path+'/GothaProBlaIta.svg#GothaProBlaIta') format('svg');
 }
+
 @font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed Book Italic'),
-         local('FiraSansCondensed-BookItalic'),
-         url($path+'/Firasanscondensedbookitalic.woff2') format('woff2'),
-         url($path+'/Firasanscondensedbookitalic.woff') format('woff'),
-         url($path+'/Firasanscondensedbookitalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
+    font-family: 'GothaProNarBol';
+    src: url($path+'/GothaProNarBol.eot');
+    src: url($path+'/GothaProNarBol.eot') format('embedded-opentype'),
+         url($path+'/GothaProNarBol.woff2') format('woff2'),
+         url($path+'/GothaProNarBol.woff') format('woff'),
+         url($path+'/GothaProNarBol.ttf') format('truetype'),
+         url($path+'/GothaProNarBol.svg#GothaProNarBol') format('svg');
 }
+
+
+
 @font-face {
-    font-family: 'Fira Sans Condensed';
-    src: local('Fira Sans Condensed ExtraBold Italic'),
-         local('FiraSansCondensed-ExtraBoldItalic'),
-         url($path+'/Firasanscondensedextrabolditalic.woff2') format('woff2'),
-         url($path+'/Firasanscondensedextrabolditalic.woff') format('woff'),
-         url($path+'/Firasanscondensedextrabolditalic.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
+    font-family: 'GothaProMedIta';
+    src: url($path+'/GothaProMedIta.eot');
+    src: url($path+'/GothaProMedIta.eot') format('embedded-opentype'),
+         url($path+'/GothaProMedIta.woff2') format('woff2'),
+         url($path+'/GothaProMedIta.woff') format('woff'),
+         url($path+'/GothaProMedIta.ttf') format('truetype'),
+         url($path+'/GothaProMedIta.svg#GothaProMedIta') format('svg');
 }
+
+
+@font-face {
+    font-family: 'GothaProIta';
+    src: url($path+'/GothaProIta.eot');
+    src: url($path+'/GothaProIta.eot') format('embedded-opentype'),
+         url($path+'/GothaProIta.woff2') format('woff2'),
+         url($path+'/GothaProIta.woff') format('woff'),
+         url($path+'/GothaProIta.ttf') format('truetype'),
+         url($path+'/GothaProIta.svg#GothaProIta') format('svg');
+}
+
+
+@font-face {
+    font-family: 'GothaProBol';
+    src: url($path+'/GothaProBol.eot');
+    src: url($path+'/GothaProBol.eot') format('embedded-opentype'),
+         url($path+'/GothaProBol.woff2') format('woff2'),
+         url($path+'/GothaProBol.woff') format('woff'),
+         url($path+'/GothaProBol.ttf') format('truetype'),
+         url($path+'/GothaProBol.svg#GothaProBol') format('svg');
+}
+
+
+
+
+
+
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed SemiBold'),
+//          local('FiraSansCondensed-SemiBold'),
+//          url($path+'/Firasanscondensedsemibold.woff2') format('woff2'),
+//          url($path+'/Firasanscondensedsemibold.woff') format('woff'),
+//          url($path+'/Firasanscondensedsemibold.ttf') format('truetype');
+//     font-weight: 600;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed Medium'),
+//          local('FiraSansCondensed-Medium'),
+//          url($path+'/Firasanscondensedmedium.woff2') format('woff2'),
+//          url($path+'/Firasanscondensedmedium.woff') format('woff'),
+//          url($path+'/Firasanscondensedmedium.ttf') format('truetype');
+//     font-weight: 500;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed Medium Italic'),
+//          local('FiraSansCondensed-MediumItalic'),
+//          url($path+'/Firasanscondensedmediumitalic.woff2') format('woff2'),
+//          url($path+'/Firasanscondensedmediumitalic.woff') format('woff'),
+//          url($path+'/Firasanscondensedmediumitalic.ttf') format('truetype');
+//     font-weight: 500;
+//     font-style: italic;
+// }
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed Italic'),
+//          local('FiraSansCondensed-Italic'),
+//          url($path+'/Firasanscondenseditalic.woff2') format('woff2'),
+//          url($path+'/Firasanscondenseditalic.woff') format('woff'),
+//          url($path+'/Firasanscondenseditalic.ttf') format('truetype');
+//     font-weight: 400;
+//     font-style: italic;
+// }
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed ExtraLight'),
+//          local('FiraSansCondensed-ExtraLight'),
+//          url($path+'/Firasanscondensedextralight.woff2') format('woff2'),
+//          url($path+'/Firasanscondensedextralight.woff') format('woff'),
+//          url($path+'/Firasanscondensedextralight.ttf') format('truetype');
+//     font-weight: 100;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed Light Italic'),
+//          local('FiraSansCondensed-LightItalic'),
+//          url($path+'/Firasanscondensedlightitalic.woff2') format('woff2'),
+//          url($path+'/Firasanscondensedlightitalic.woff') format('woff'),
+//          url($path+'/Firasanscondensedlightitalic.ttf') format('truetype');
+//     font-weight: 200;
+//     font-style: italic;
+// }
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed Light'),
+//          local('FiraSansCondensed-Light'),
+//          url($path+'/Firasanscondensedlight.woff2') format('woff2'),
+//          url($path+'/Firasanscondensedlight.woff') format('woff'),
+//          url($path+'/Firasanscondensedlight.ttf') format('truetype');
+//     font-weight: 200;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed Book'),
+//          local('FiraSansCondensed-Book'),
+//          url($path+'/Firasanscondensedbook.woff2') format('woff2'),
+//          url($path+'/Firasanscondensedbook.woff') format('woff'),
+//          url($path+'/Firasanscondensedbook.ttf') format('truetype');
+//     font-weight: 300;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed Regular'),
+//          local('FiraSansCondensed-Regular'),
+//          url($path+'/Firasanscondensedregular.woff2') format('woff2'),
+//          url($path+'/Firasanscondensedregular.woff') format('woff'),
+//          url($path+'/Firasanscondensedregular.ttf') format('truetype');
+//     font-weight: 400;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed Heavy'),
+//          local('FiraSansCondensed-Heavy'),
+//          url($path+'/Firasanscondensedheavy.woff2') format('woff2'),
+//          url($path+'/Firasanscondensedheavy.woff') format('woff'),
+//          url($path+'/Firasanscondensedheavy.ttf') format('truetype');
+//     font-weight: 900;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed SemiBold Italic'),
+//          local('FiraSansCondensed-SemiBoldItalic'),
+//          url($path+'/Firasanscondensedsemibolditalic.woff2') format('woff2'),
+//          url($path+'/Firasanscondensedsemibolditalic.woff') format('woff'),
+//          url($path+'/Firasanscondensedsemibolditalic.ttf') format('truetype');
+//     font-weight: 600;
+//     font-style: italic;
+// }
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed Bold Italic'),
+//          local('FiraSansCondensed-BoldItalic'),
+//          url($path+'/Firasanscondensedbolditalic.woff2') format('woff2'),
+//          url($path+'/Firasanscondensedbolditalic.woff') format('woff'),
+//          url($path+'/Firasanscondensedbolditalic.ttf') format('truetype');
+//     font-weight: 700;
+//     font-style: italic;
+// }
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed ExtraLight Italic'),
+//          local('FiraSansCondensed-ExtraLightItalic'),
+//          url($path+'/Firasanscondensedextralightitalic.woff2') format('woff2'),
+//          url($path+'/Firasanscondensedextralightitalic.woff') format('woff'),
+//          url($path+'/Firasanscondensedextralightitalic.ttf') format('truetype');
+//     font-weight: 100;
+//     font-style: italic;
+// }
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed Bold'),
+//          local('FiraSansCondensed-Bold'),
+//          url($path+'/Firasanscondensedbold.woff2') format('woff2'),
+//          url($path+'/Firasanscondensedbold.woff') format('woff'),
+//          url($path+'/Firasanscondensedbold.ttf') format('truetype');
+//     font-weight: 700;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed Heavy Italic'),
+//          local('FiraSansCondensed-HeavyItalic'),
+//          url($path+'/Firasanscondensedheavyitalic.woff2') format('woff2'),
+//          url($path+'/Firasanscondensedheavyitalic.woff') format('woff'),
+//          url($path+'/Firasanscondensedheavyitalic.ttf') format('truetype');
+//     font-weight: 900;
+//     font-style: italic;
+// }
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed ExtraBold'),
+//          local('FiraSansCondensed-ExtraBold'),
+//          url($path+'/Firasanscondensedextrabold.woff2') format('woff2'),
+//          url($path+'/Firasanscondensedextrabold.woff') format('woff'),
+//          url($path+'/Firasanscondensedextrabold.ttf') format('truetype');
+//     font-weight: 800;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed Book Italic'),
+//          local('FiraSansCondensed-BookItalic'),
+//          url($path+'/Firasanscondensedbookitalic.woff2') format('woff2'),
+//          url($path+'/Firasanscondensedbookitalic.woff') format('woff'),
+//          url($path+'/Firasanscondensedbookitalic.ttf') format('truetype');
+//     font-weight: 300;
+//     font-style: italic;
+// }
+// @font-face {
+//     font-family: 'Fira Sans Condensed';
+//     src: local('Fira Sans Condensed ExtraBold Italic'),
+//          local('FiraSansCondensed-ExtraBoldItalic'),
+//          url($path+'/Firasanscondensedextrabolditalic.woff2') format('woff2'),
+//          url($path+'/Firasanscondensedextrabolditalic.woff') format('woff'),
+//          url($path+'/Firasanscondensedextrabolditalic.ttf') format('truetype');
+//     font-weight: 800;
+//     font-style: italic;
+// }

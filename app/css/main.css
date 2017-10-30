@@ -402,112 +402,65 @@ template {
   font-style: normal; }
 
 @font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed SemiBold"), local("FiraSansCondensed-SemiBold"), url("../fonts/Firasanscondensedsemibold.woff2") format("woff2"), url("../fonts/Firasanscondensedsemibold.woff") format("woff"), url("../fonts/Firasanscondensedsemibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed Medium"), local("FiraSansCondensed-Medium"), url("../fonts/Firasanscondensedmedium.woff2") format("woff2"), url("../fonts/Firasanscondensedmedium.woff") format("woff"), url("../fonts/Firasanscondensedmedium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed Medium Italic"), local("FiraSansCondensed-MediumItalic"), url("../fonts/Firasanscondensedmediumitalic.woff2") format("woff2"), url("../fonts/Firasanscondensedmediumitalic.woff") format("woff"), url("../fonts/Firasanscondensedmediumitalic.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed Italic"), local("FiraSansCondensed-Italic"), url("../fonts/Firasanscondenseditalic.woff2") format("woff2"), url("../fonts/Firasanscondenseditalic.woff") format("woff"), url("../fonts/Firasanscondenseditalic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed ExtraLight"), local("FiraSansCondensed-ExtraLight"), url("../fonts/Firasanscondensedextralight.woff2") format("woff2"), url("../fonts/Firasanscondensedextralight.woff") format("woff"), url("../fonts/Firasanscondensedextralight.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed Light Italic"), local("FiraSansCondensed-LightItalic"), url("../fonts/Firasanscondensedlightitalic.woff2") format("woff2"), url("../fonts/Firasanscondensedlightitalic.woff") format("woff"), url("../fonts/Firasanscondensedlightitalic.ttf") format("truetype");
-  font-weight: 200;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed Light"), local("FiraSansCondensed-Light"), url("../fonts/Firasanscondensedlight.woff2") format("woff2"), url("../fonts/Firasanscondensedlight.woff") format("woff"), url("../fonts/Firasanscondensedlight.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed Book"), local("FiraSansCondensed-Book"), url("../fonts/Firasanscondensedbook.woff2") format("woff2"), url("../fonts/Firasanscondensedbook.woff") format("woff"), url("../fonts/Firasanscondensedbook.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed Regular"), local("FiraSansCondensed-Regular"), url("../fonts/Firasanscondensedregular.woff2") format("woff2"), url("../fonts/Firasanscondensedregular.woff") format("woff"), url("../fonts/Firasanscondensedregular.ttf") format("truetype");
+  font-family: 'Mohave';
+  src: local("Mohave"), local("Mohave"), url("../fonts/Mohave.woff") format("woff"), url("../fonts/Mohave.woff2") format("woff2"), url("../fonts/Mohave.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed Heavy"), local("FiraSansCondensed-Heavy"), url("../fonts/Firasanscondensedheavy.woff2") format("woff2"), url("../fonts/Firasanscondensedheavy.woff") format("woff"), url("../fonts/Firasanscondensedheavy.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal; }
+  font-family: 'GothaProReg';
+  src: url("../fonts/GothaProReg.eot");
+  src: url("../fonts/GothaProReg.eot") format("embedded-opentype"), url("../fonts/GothaProReg.woff2") format("woff2"), url("../fonts/GothaProReg.woff") format("woff"), url("../fonts/GothaProReg.ttf") format("truetype"), url("../fonts/GothaProReg.svg#GothaProReg") format("svg"); }
 
 @font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed SemiBold Italic"), local("FiraSansCondensed-SemiBoldItalic"), url("../fonts/Firasanscondensedsemibolditalic.woff2") format("woff2"), url("../fonts/Firasanscondensedsemibolditalic.woff") format("woff"), url("../fonts/Firasanscondensedsemibolditalic.ttf") format("truetype");
-  font-weight: 600;
-  font-style: italic; }
+  font-family: 'GothaProBla';
+  src: url("../fonts/GothaProBla.eot");
+  src: url("../fonts/GothaProBla.eot") format("embedded-opentype"), url("../fonts/GothaProBla.woff2") format("woff2"), url("../fonts/GothaProBla.woff") format("woff"), url("../fonts/GothaProBla.ttf") format("truetype"), url("../fonts/GothaProBla.svg#GothaProBla") format("svg"); }
 
 @font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed Bold Italic"), local("FiraSansCondensed-BoldItalic"), url("../fonts/Firasanscondensedbolditalic.woff2") format("woff2"), url("../fonts/Firasanscondensedbolditalic.woff") format("woff"), url("../fonts/Firasanscondensedbolditalic.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic; }
+  font-family: 'GothaProBolIta';
+  src: url("../fonts/GothaProBolIta.eot");
+  src: url("../fonts/GothaProBolIta.eot") format("embedded-opentype"), url("../fonts/GothaProBolIta.woff2") format("woff2"), url("../fonts/GothaProBolIta.woff") format("woff"), url("../fonts/GothaProBolIta.ttf") format("truetype"), url("../fonts/GothaProBolIta.svg#GothaProBolIta") format("svg"); }
 
 @font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed ExtraLight Italic"), local("FiraSansCondensed-ExtraLightItalic"), url("../fonts/Firasanscondensedextralightitalic.woff2") format("woff2"), url("../fonts/Firasanscondensedextralightitalic.woff") format("woff"), url("../fonts/Firasanscondensedextralightitalic.ttf") format("truetype");
-  font-weight: 100;
-  font-style: italic; }
+  font-family: 'GothaProNarMed';
+  src: url("../fonts/GothaProNarMed.eot");
+  src: url("../fonts/GothaProNarMed.eot") format("embedded-opentype"), url("../fonts/GothaProNarMed.woff2") format("woff2"), url("../fonts/GothaProNarMed.woff") format("woff"), url("../fonts/GothaProNarMed.ttf") format("truetype"), url("../fonts/GothaProNarMed.svg#GothaProNarMed") format("svg"); }
 
 @font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed Bold"), local("FiraSansCondensed-Bold"), url("../fonts/Firasanscondensedbold.woff2") format("woff2"), url("../fonts/Firasanscondensedbold.woff") format("woff"), url("../fonts/Firasanscondensedbold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal; }
+  font-family: 'GothaProMed';
+  src: url("../fonts/GothaProMed.eot");
+  src: url("../fonts/GothaProMed.eot") format("embedded-opentype"), url("../fonts/GothaProMed.woff2") format("woff2"), url("../fonts/GothaProMed.woff") format("woff"), url("../fonts/GothaProMed.ttf") format("truetype"), url("../fonts/GothaProMed.svg#GothaProMed") format("svg"); }
 
 @font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed Heavy Italic"), local("FiraSansCondensed-HeavyItalic"), url("../fonts/Firasanscondensedheavyitalic.woff2") format("woff2"), url("../fonts/Firasanscondensedheavyitalic.woff") format("woff"), url("../fonts/Firasanscondensedheavyitalic.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic; }
+  font-family: 'GothaProLig';
+  src: url("../fonts/GothaProLig.eot");
+  src: url("../fonts/GothaProLig.eot") format("embedded-opentype"), url("../fonts/GothaProLig.woff2") format("woff2"), url("../fonts/GothaProLig.woff") format("woff"), url("../fonts/GothaProLig.ttf") format("truetype"), url("../fonts/GothaProLig.svg#GothaProLig") format("svg"); }
 
 @font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed ExtraBold"), local("FiraSansCondensed-ExtraBold"), url("../fonts/Firasanscondensedextrabold.woff2") format("woff2"), url("../fonts/Firasanscondensedextrabold.woff") format("woff"), url("../fonts/Firasanscondensedextrabold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal; }
+  font-family: 'GothaProBlaIta';
+  src: url("../fonts/GothaProBlaIta.eot");
+  src: url("../fonts/GothaProBlaIta.eot") format("embedded-opentype"), url("../fonts/GothaProBlaIta.woff2") format("woff2"), url("../fonts/GothaProBlaIta.woff") format("woff"), url("../fonts/GothaProBlaIta.ttf") format("truetype"), url("../fonts/GothaProBlaIta.svg#GothaProBlaIta") format("svg"); }
 
 @font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed Book Italic"), local("FiraSansCondensed-BookItalic"), url("../fonts/Firasanscondensedbookitalic.woff2") format("woff2"), url("../fonts/Firasanscondensedbookitalic.woff") format("woff"), url("../fonts/Firasanscondensedbookitalic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic; }
+  font-family: 'GothaProNarBol';
+  src: url("../fonts/GothaProNarBol.eot");
+  src: url("../fonts/GothaProNarBol.eot") format("embedded-opentype"), url("../fonts/GothaProNarBol.woff2") format("woff2"), url("../fonts/GothaProNarBol.woff") format("woff"), url("../fonts/GothaProNarBol.ttf") format("truetype"), url("../fonts/GothaProNarBol.svg#GothaProNarBol") format("svg"); }
 
 @font-face {
-  font-family: 'Fira Sans Condensed';
-  src: local("Fira Sans Condensed ExtraBold Italic"), local("FiraSansCondensed-ExtraBoldItalic"), url("../fonts/Firasanscondensedextrabolditalic.woff2") format("woff2"), url("../fonts/Firasanscondensedextrabolditalic.woff") format("woff"), url("../fonts/Firasanscondensedextrabolditalic.ttf") format("truetype");
-  font-weight: 800;
-  font-style: italic; }
+  font-family: 'GothaProMedIta';
+  src: url("../fonts/GothaProMedIta.eot");
+  src: url("../fonts/GothaProMedIta.eot") format("embedded-opentype"), url("../fonts/GothaProMedIta.woff2") format("woff2"), url("../fonts/GothaProMedIta.woff") format("woff"), url("../fonts/GothaProMedIta.ttf") format("truetype"), url("../fonts/GothaProMedIta.svg#GothaProMedIta") format("svg"); }
+
+@font-face {
+  font-family: 'GothaProIta';
+  src: url("../fonts/GothaProIta.eot");
+  src: url("../fonts/GothaProIta.eot") format("embedded-opentype"), url("../fonts/GothaProIta.woff2") format("woff2"), url("../fonts/GothaProIta.woff") format("woff"), url("../fonts/GothaProIta.ttf") format("truetype"), url("../fonts/GothaProIta.svg#GothaProIta") format("svg"); }
+
+@font-face {
+  font-family: 'GothaProBol';
+  src: url("../fonts/GothaProBol.eot");
+  src: url("../fonts/GothaProBol.eot") format("embedded-opentype"), url("../fonts/GothaProBol.woff2") format("woff2"), url("../fonts/GothaProBol.woff") format("woff"), url("../fonts/GothaProBol.ttf") format("truetype"), url("../fonts/GothaProBol.svg#GothaProBol") format("svg"); }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -14325,7 +14278,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-text-size-adjust: none;
   text-size-adjust: none;
-  font: 16px "Fira Sans Condensed";
+  font: 14px "GothaProReg";
   color: #333;
   background-color: white; }
 
@@ -14358,21 +14311,21 @@ img {
   outline: 0; }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "GothaProReg", sans-serif;
   color: inherit;
   line-height: 170%; }
 
 h4 {
-  font-size: 0.875em; }
+  font-size: 0.8125em; }
 
 h3 {
-  font-size: 1.125em; }
+  font-size: 1.0625em; }
 
 h2 {
-  font-size: 1.5em; }
+  font-size: 1.375em; }
 
 h1 {
-  font-size: 2.25em; }
+  font-size: 2.0625em; }
 
 ul {
   position: relative;
@@ -15181,7 +15134,7 @@ button:hover, button:focus {
     bottom: 50%;
     margin-bottom: -12px; }
   .btn-lnk a, .btn-lnk-red a {
-    font-family: "Fira Sans Condensed";
+    font-family: "GothaProReg";
     position: relative; }
   .btn-lnk a:before, .btn-lnk-red a:before {
     right: 0; }
@@ -15297,6 +15250,8 @@ button:hover, button:focus {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
+  .logo img {
+    width: 93px; }
   .logo > a:hover, .logo > a:focus {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
@@ -15324,7 +15279,7 @@ button:hover, button:focus {
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
   .nav-menu:not(.min) .menu-list {
-    font-size: 18px; }
+    font-size: 16px; }
     .nav-menu:not(.min) .menu-list a {
       position: relative;
       display: block;
@@ -15337,7 +15292,7 @@ button:hover, button:focus {
       position: relative;
       display: inline-block; }
       .nav-menu:not(.min) .menu-list > li > a {
-        font-family: "Fira Sans Condensed";
+        font-family: "GothaProReg";
         font-weight: 500;
         padding: 5px 0px;
         margin: 10px 15px;
@@ -15547,10 +15502,10 @@ button:hover, button:focus {
   font-size: 1.2em;
   text-align: center; }
 
-#success-message {
+[id*='success-message'] {
   color: lawngreen; }
 
-#fail-message {
+[id*='fail-message'] {
   color: red; }
 
 .min-menu-modal .menu-toggle {
@@ -15569,10 +15524,18 @@ button:hover, button:focus {
     -o-transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+    .min-menu-modal .menu-list li ul > li {
+      margin-bottom: 8px;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      background-color: #06599f; }
+      .min-menu-modal .menu-list li ul > li:last-child {
+        -webkit-border-radius: 0 0 5px 5px;
+        border-radius: 0 0 5px 5px; }
     .min-menu-modal .menu-list li:focus, .min-menu-modal .menu-list li:hover, .min-menu-modal .menu-list li:active {
-      -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      transform: scale(1.1); }
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05); }
   .min-menu-modal .menu-list a {
     color: white;
     font-size: 1.3em;
@@ -15597,7 +15560,7 @@ button:hover, button:focus {
   box-shadow: inset 0 1px 8px 0px rgba(255, 255, 255, 0.1), 0 0 20px 2px rgba(255, 255, 255, 0.7); }
 
 .feedback input {
-  width: 80%; }
+  width: 100%; }
 
 .feedback textarea {
   margin-top: 30px;
@@ -15626,10 +15589,10 @@ button:hover, button:focus {
   overflow: hidden;
   background-repeat: repeat-y; }
   #banner .country-shadow {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0)), to(black));
-    background: -webkit-linear-gradient(top, rgba(50, 50, 50, 0), black);
-    background: -o-linear-gradient(top, rgba(50, 50, 50, 0), black);
-    background: linear-gradient(to bottom, rgba(50, 50, 50, 0), black); }
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(100, 100, 100, 0)), to(rgba(0, 0, 0, 0.5)));
+    background: -webkit-linear-gradient(top, rgba(100, 100, 100, 0), rgba(0, 0, 0, 0.5));
+    background: -o-linear-gradient(top, rgba(100, 100, 100, 0), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(to bottom, rgba(100, 100, 100, 0), rgba(0, 0, 0, 0.5)); }
 
 .banner-content {
   display: table-cell;
@@ -15903,19 +15866,20 @@ main {
   display: none; }
 
 .rev-slider * {
+  text-shadow: 0 0 5px black;
   color: white; }
 
 .rev-slider h1 {
   position: relative;
   font-weight: 500;
-  font-size: 2.8125em;
+  font-size: 2.375em;
   letter-spacing: 2px;
   height: 80px; }
 
 .rev-slider h2 {
   white-space: normal;
   font-weight: 300;
-  font-size: 1.75em;
+  font-size: 1.25em;
   display: inline-block;
   line-height: 110% !important; }
 
@@ -15936,13 +15900,13 @@ main {
 .rev-slider h2 {
   white-space: normal;
   font-weight: 300;
-  font-size: 1.625em;
+  font-size: 1.25em;
   display: inline-block;
   line-height: 110% !important; }
 
 .rev-slider .splitted {
   width: 50%;
-  font-size: 1.625em !important; }
+  font-size: 1.25em !important; }
 
 .rev-slider .tp-splitted {
   line-height: 40px; }
@@ -16100,7 +16064,7 @@ main {
 
 .country-shadow {
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.2); }
 
 .country-location {
   padding: 60px 0;
@@ -16237,7 +16201,7 @@ main {
   left: 74.9%; }
 
 .button-group button:nth-child(5) {
-  top: 40.5%;
+  top: 41.3%;
   left: 79.5%; }
 
 .button-group button:nth-child(6) {
@@ -16332,7 +16296,7 @@ main {
     vertical-align: middle; }
 
 .contact-info .fa-phone {
-  font-size: 18px; }
+  font-size: 16px; }
 
 .contact-info .fa-envelope {
   font-size: 16px; }
@@ -16460,7 +16424,7 @@ main {
     font-weight: 500;
     position: relative;
     display: block;
-    font-size: 18px; }
+    font-size: 16px; }
   [class*="inlineble-1"].serv figure i {
     font-size: 28px;
     margin-left: 10px;
@@ -16617,6 +16581,11 @@ main {
   padding-right: 15px;
   vertical-align: middle; }
 
+.footer-logo {
+  font-size: 16px; }
+  .footer-logo img {
+    width: 60%; }
+
 .footer-menu li {
   margin: 10px 0;
   vertical-align: middle;
@@ -16630,6 +16599,10 @@ main {
 .footer-info button, .footer-info .footer-email {
   float: right;
   margin: 15px 0; }
+
+.footer-info .footer-email {
+  width: 100%;
+  text-align: right; }
 
 .copyright {
   margin-top: 20px;
@@ -16728,7 +16701,8 @@ main {
     display: inline-block; }
     #footer section button {
       float: initial;
-      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
       height: 40px; }
     #footer section span {
       float: initial; } }

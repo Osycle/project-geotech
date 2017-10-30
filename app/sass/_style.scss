@@ -10,7 +10,7 @@ $color_1: #064980;
 $color_2: darken($color_1, 10);
 $color_3: #06599f;
 $color_4: #e3000f;
-$font-family: "Fira Sans Condensed";
+$font-family: "GothaProReg";
 $color_footer: #05589e;
 
 @function em($pixels, $context: $browser-context) {
@@ -125,7 +125,7 @@ body{
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	text-size-adjust: none;
-	font: 16px $font-family;
+	font: 14px $font-family;
 	color: #333;
 	background-color: white;
 }
@@ -161,16 +161,16 @@ h1,h2,h3,h4,h5{
 	line-height: 170%;
 }
 h4{
-	font-size: em(14, 16);;
+	font-size: em(13, 16);;
 }
 h3{
-	font-size: em(18, 16);;
+	font-size: em(17, 16);;
 }
 h2{
-	font-size: em(24, 16);
+	font-size: em(22, 16);
 }
 h1{
-	font-size: em(36, 16);
+	font-size: em(33, 16);
 
 }
 
@@ -731,7 +731,10 @@ $header-height: 190px;
   float: left;
   padding: 15px 0;
   transition: all 0.3s ease-in-out;
-  
+  img{
+  	//width: 100%;
+  	width: 93px;
+  }
   & > a{
   	//@include table-celling(150px);
   	&:hover, &:focus{
@@ -773,7 +776,7 @@ $header-height: 190px;
 	}
 	.menu-list{
 		@extend .clearfix;
-		font-size: 18px;
+		font-size: 16px;
 		&, ul {
 			//background-color: $color_1;
 		}
@@ -1043,12 +1046,15 @@ $header-height: 190px;
 	font-size: 1.2em;
 	text-align: center;
 }
-#success-message{
+
+[id*='success-message']{
 	color: lawngreen;
 }
-#fail-message{
+[id*='fail-message']{
 	color: red;
 }
+
+
 //MINI MENU
 .min-menu-modal{
 
@@ -1063,8 +1069,16 @@ $header-height: 190px;
 	    border-radius: 5px;
 	    margin-bottom: 15px;
 	    transition: transform 0.3s ease-in-out;
+	    ul>li{
+	    	margin-bottom: 8px;
+	    	border-radius: 0;
+	    	background-color: rgba($color_3, 1);
+	    	&:last-child{
+	    		border-radius: 0 0 5px 5px;
+	    	}
+	    }
 	    &:focus, &:hover, &:active{
-		  	transform: scale(1.1); 
+		  	transform: scale(1.05); 
 		  }
 		}
 		a{
@@ -1097,7 +1111,7 @@ $header-height: 190px;
 		}
 	}
 	input{
-		width: 80%;
+		width: 100%;
 	}
 	textarea{
 		margin-top: 30px;
@@ -1140,7 +1154,7 @@ $header-height: 190px;
 	//background-image: url('../img/country-bg.jpg');
 	background-repeat: repeat-y;
 	.country-shadow{
-		background: linear-gradient(to bottom, rgba(50, 50, 50, 0), black);
+		background: linear-gradient(to bottom, rgba(100, 100, 100, 0), rgba(black, 0.5) );
 	}
 }
 .banner-content{
@@ -1247,6 +1261,7 @@ h1{
 	position: relative;
 	font-weight: 300;
 	padding-bottom: 10px;
+
 	&:before{
 		@extend .claf;
     width: 50px;
@@ -1518,19 +1533,20 @@ main{
 .rev-slider{
 
  *{
+ 	  text-shadow: 0 0 5px black;
 		color: white;
 	}
 	h1{
 		position: relative;
 		font-weight: 500;
-		font-size: em(45, 16);
+		font-size: em(38, 16);
 		letter-spacing:2px;
 		height: 80px;
 	}
 	h2{
 		white-space: normal;
 		font-weight: 300;
-		font-size: em(28, 16);
+		font-size: em(20, 16);
 		display: inline-block;
 		line-height: 110% !important;
 	}
@@ -1556,13 +1572,13 @@ main{
 	h2{
 		white-space: normal;
 		font-weight: 300;
-		font-size: em(26, 16);
+		font-size: em(20, 16);
 		display: inline-block;
 		line-height: 110% !important;
 	}
 	.splitted{
 		width: 50%;
-		font-size: em(26, 16) !important;
+		font-size: em(20, 16) !important;
 	}
 	.tp-splitted{
 		 line-height: 40px;
@@ -1832,7 +1848,7 @@ main{
 }
 .country-shadow{
 	height: 100%;
-	background-color: rgba(black, 0.5);
+	background-color: rgba(black, 0.2);
 }
 .country-location{
 	padding: 60px 0;
@@ -1986,7 +2002,7 @@ main{
     left: 74.9%;
 	}
 	button:nth-child(5){
-    top: 40.5%;
+    top: 41.3%;
     left: 79.5%;
 	}
 	button:nth-child(6){
@@ -2168,7 +2184,7 @@ main{
 			}
 		}
 	.fa-phone{
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.fa-envelope{
 		font-size: 16px;
@@ -2333,7 +2349,7 @@ main{
 			font-weight: 500;
 			position: relative;
 			display: block;
-			font-size: 18px;
+			font-size: 16px;
 		}
 		i{
 			font-size: 28px;
@@ -2553,6 +2569,14 @@ main{
 .skin{
 	@include table-celling(190px);
 }
+.footer-logo{
+	font-size: 16px;
+	img{
+		//margin-top: -10px;
+		width: 60%;
+	}
+	
+}
 .footer-menu{
 	//height: 100%;
 	li{
@@ -2566,13 +2590,17 @@ main{
 .footer-info{
 
 	
-	.phone-style, button{
+.phone-style, button{
 		display: block;
 		text-align: right;
 	}
 	button, .footer-email{
 		float: right;
 		margin: 15px 0;
+	}
+	.footer-email{
+		width: 100%;
+    text-align: right;
 	}
 }
 
